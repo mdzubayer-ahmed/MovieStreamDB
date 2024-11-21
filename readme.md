@@ -15,17 +15,17 @@ MovieStreamDB is a robust movie streaming platform database and management syste
 - **Frontend**: HTML and CSS for a responsive and user-friendly interface.
 
 # Project Structure
-MovieStreamDB/
+MovieStreamDB/ <br>
+│<br>
+├── app/ <br>
+│   ├── __init__.py    # Application factory <br>
+│   ├── db.py          # Database connection and management <br>
+│   ├── routes.py      # Application routes <br>
+│   └── templates/     # HTML templates <br>
 │
-├── app/
-│   ├── __init__.py    # Application factory
-│   ├── db.py          # Database connection and management
-│   ├── routes.py      # Application routes
-│   └── templates/     # HTML templates
-│
-├── database/          # SQL files for database setup
-├── run.py             # Application entry point
-└── README.md          # Project documentation
+├── database/          # SQL files for database setup <br>
+├── run.py             # Application entry point <br>
+└── README.md          # Project documentation <br>
 
 # Set up the database:
 
