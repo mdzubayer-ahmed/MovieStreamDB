@@ -2,17 +2,15 @@
 
 {% block content %}
 <h1>Manage Payments</h1>
-
-<!-- Add New Payment -->
-<a href="/payments/add" class="btn btn-primary mb-3">Add New Payment</a>
-
+<a href="/payments/add" class="btn btn-primary mb-3">Add Payment</a>
 <table class="table">
     <thead>
         <tr>
-            <th>ID</th>
-            <th>User ID</th>
+            <th>Payment ID</th>
             <th>Amount</th>
             <th>Payment Date</th>
+            <th>Payment Method</th>
+            <th>Subscription ID</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -20,9 +18,10 @@
         {% for payment in payments %}
         <tr>
             <td>{{ payment.payment_id }}</td>
-            <td>{{ payment.userID }}</td>
             <td>{{ payment.payment_amount }}</td>
             <td>{{ payment.payment_date }}</td>
+            <td>{{ payment.payment_method }}</td>
+            <td>{{ payment.subscription_id }}</td>
             <td>
                 <a href="/payments/edit/{{ payment.payment_id }}" class="btn btn-warning btn-sm">Edit</a>
                 <form action="/payments/delete/{{ payment.payment_id }}" method="POST" style="display:inline;">
@@ -33,5 +32,4 @@
         {% endfor %}
     </tbody>
 </table>
-
 {% endblock %}
