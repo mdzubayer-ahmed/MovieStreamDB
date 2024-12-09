@@ -15,8 +15,9 @@ This is a comprehensive database and web application that simulates the operatio
 6. [How to Install and Run the Project](#how-to-install-and-run-the-project)
 7. [How to Use the Project](#how-to-use-the-project)
 8. [Contributors](#contributors)
-9. [Future Development](#future-development-Thoughts)
-10. [Re-using/Cloning the code](#Cloning-the-code)
+9. [Latest updates](#Latest-updates)
+10. [Future Development](#future-development-Thoughts)
+11. [Re-using/Cloning the code](#Cloning-the-code)
 
 ---
 
@@ -61,12 +62,8 @@ MovieStreamDB/
 │   |   ├── edit_rating.html                # Form to edit an existing rating 
 │   |   ├── ratings.html                    # Page to list and manage ratings
 ├── database/
-|   ├── movie_streaming_users.sql           # SQL script for users tables 
-|   ├── movie_streaming_movies.sql          # SQL script for movies tables 
-|   ├── movie_streaming_genre.sql           # SQL script for genres tables 
-|   ├── movie_streaming_ratings.sql         # SQL script for ratings tables 
-|   ├── movie_streaming_payments.sql        # SQL script for payments tables 
-|   ├── movie_streaming_subscriptions.sql   # SQL script for subscriptions tables
+|   ├── database.sql           # SQL script for creating, and populating the database automatically 
+|   ├── trigger.sql          # SQL script for triggers table (user login tracking) 
 ├── Documents/
 |   ├── Group1-Phase1.pdf                       # Phase-1 submission of the project (Project Overview)
 |   ├── Group1-Phase2.pdf                       # Phase-2 submission (ERD, Relational Schema, and Normalization)
@@ -173,6 +170,13 @@ ID: 202174678 <br>
 Email: tanjett@mun.ca
 
 ---
+## Latest updates
+(Date: December 09, 2024, by Md. Zubayer Ahmed)
+- Unified the Database
+- Added SQL Triggers and procedures
+- Created Database.sql to create and populate the database automatically
+
+----
 
 ## Future Development Thoughts
 - Implementation of a Query page so the user can do their own queries from the front-end
